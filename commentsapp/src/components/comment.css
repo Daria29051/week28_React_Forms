@@ -1,0 +1,40 @@
+.comment__total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+.comment__button {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em  ;
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+}
+
+.comment__item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 90vw;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.comment__container {
+    position: relative;
+  }
+
+
+  .comment__icon {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
