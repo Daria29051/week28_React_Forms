@@ -12,14 +12,13 @@ export default function Comment() {
     setValue(e.target.value);
   };
 
-  const sendData = (e) => {
+
+  const sendData = () => {
     if (value !== "") {
-      let commentValueChecked = value.replace(/viagra/gi, "***").replace(/xxx/gi, "***");
-      comment.push(commentValueChecked);
-      console.log(comment);
-      setComment(comment);
-    }
-  };
+    let commentValueChecked = value.replace(/viagra/gi, "***").replace(/xxx/gi, "***");
+    setComment((prevState) => [commentValueChecked, ...prevState]);
+}
+  }
 
   const clearInput = () => {
   setValue('');
