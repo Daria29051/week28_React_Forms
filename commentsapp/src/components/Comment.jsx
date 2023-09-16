@@ -18,6 +18,7 @@ export default function Comment() {
     if (value !== "") {
     let commentValueChecked = value.replace(/viagra/gi, "***").replace(/xxx/gi, "***");
     setComment((prevState) => [commentValueChecked, ...prevState]);
+    setValue('');
 }
   }
 
