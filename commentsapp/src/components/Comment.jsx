@@ -8,6 +8,7 @@ export default function Comment() {
   let [value, setValue] = useState("");
   let [comment, setComment] = useState([]);
 
+
   const handleChange = (e) => {
     setValue(e.target.value);
   };
@@ -29,8 +30,9 @@ export default function Comment() {
       <h1>Оставьте Ваш комментарий:</h1>
       <div className="comment__total ">
         <div className="comment__output">
+          {comment.length !== 0 ? <div className="comment__item first-item">{comment[0]}</div>  : ""}
           {comment.length !== 0
-            ? comment.map((item, index) => (
+            ? comment.slice(1).map((item, index) => (
                 <div className="comment__item" key={index}>
                   {item}
                 </div>
