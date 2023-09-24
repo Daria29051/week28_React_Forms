@@ -10,7 +10,7 @@ export default function Comment() {
 
 
   const handleChange = (e) => {
-    setValue(e.target.value.trim());
+    setValue(e.target.value.trimStart());
   };
 
 
